@@ -78,17 +78,30 @@ function clearCart() {
 // Llamar a la función para mostrar el carrito cuando la página se cargue
 window.onload = mostrarCarrito;
 
-// Función para vaciar el carrito
+// Función de compra
 function comprar() {
-  localStorage.removeItem("cart"); // Eliminar el carrito del localStorage
-  Swal.fire({
-    position: "right",
-    icon: "success",
-    title: "Tu compra se realizó con éxito",
-    showConfirmButton: false,
-    timer: 1500,
-  });
-  setTimeout(() => {
-    location.reload();
-  }, 1500); // Recargar la página después de que se muestra el mensaje
+  const storedCart = localStorage.getItem("cart");
+  const cart = storedCart ? JSON.parse(storedCart) : [];
+
+  if (cart.length === 0) {
+    Swal.fire({
+      position: "right",
+      icon: "error",
+      title: "El carrito está vacío",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  } else {
+    localStorage.removeItem("cart"); // Eliminar el carrito del localStorage
+    Swal.fire({
+      position: "right",
+      icon: "success",
+      title: "Tu compra se realizó con éxito",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    setTimeout(() => {
+      location.reload();
+    }, 1500); // Recargar la página después de que se muestra el mensaje
+  }
 }
