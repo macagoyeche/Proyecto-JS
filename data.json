@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://www.nakaoutdoors.com.ar/img/articulos/buzo_rotpunkt_micropolar_100_1_imagen1.jpg",
+        "name" : "buzo-polar",
+        "price" : 10000
+    },
+
+    {
+        "id" : 2,
+        "img" : "https://http2.mlstatic.com/D_NQ_NP_682348-MLA46725921582_072021-O.webp", 
+        "name" : "buzo-blanco",
+        "price" : 14000
+    },
+
+    {
+        "id" : 3,
+        "img" : "https://www.losgallegosalvear.com.ar/10142-large_default/abyss-22i-0170-buzo-medio-cierre-con-reflex-marino-s.jpg" , 
+        "name" : "buzo-negro",
+        "price" : 15000
+    }
+]

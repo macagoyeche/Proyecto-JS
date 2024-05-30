@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="name" content="Maria Macarenna Goyeche">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="name" content="Maria Macarenna Goyeche" />
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="./css/carrito.css">
-</head>
-<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <link rel="stylesheet" href="./css/carrito.css" />
+  </head>
+  <body>
     <h1>Carrito de Compras</h1>
-    <div id="carrito">
-        
-    </div>
+    <div id="carrito"></div>
 
-    <button id="bvolver" onclick="window.location.href = './index.html';">Tienda</button>
+    <button id="bvolver" onclick="window.location.href = './index.html';">
+      Tienda
+    </button>
     <button id="vcarrito" onclick="clearCart()">Vaciar Carrito</button>
+    <button id="btn-comprar" onclick="comprar()">Comprar</button>
     <script src="./js/carrito.js"></script>
-</body>
+  </body>
 </html>
